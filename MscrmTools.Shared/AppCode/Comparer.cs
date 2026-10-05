@@ -22,15 +22,16 @@ namespace MscrmTools.Shared.AppCode
         {
         }
 
+    
+        public Comparer(T parent, string tableAlias, string column) : base(parent, tableAlias, column)
+        {
+        }
         /// <summary>
         /// Initializes a new instance of the <see cref="Comparer{T}"/> class.
         /// </summary>
         /// <param name="parent">The parent.</param>
         /// <param name="tableAlias">Alias of the related table.</param>
         /// <param name="column">First column to compare.</param>
-        public Comparer(T parent, string tableAlias, string column) : base(parent, tableAlias, column)
-        {
-        }
     }
 
     /// <summary>
